@@ -91,7 +91,8 @@
         margin-bottom: 8px;
     }
 
-    form input:not([type=submit]) {
+    form input:not([type=submit]),
+    form select {
         border: 2px solid #4444a6;
         padding: 4px 8px;
         border-radius: 3px;
@@ -128,7 +129,11 @@
 
             <input id="company" placeholder="Company" maxlength="40" name="company" size="20" type="text" />
 
-            <input id="country" placeholder="Country" maxlength="40" name="country" size="20" type="text" />
+            <select id="country" name="country">
+                <option value="Brazil">Brazil</option>
+                <option value="China">China</option>
+                <option value="France">France</option>
+            </select>
             
             <input id="phone" placeholder="Phone" maxlength="40" name="phone" size="20" type="text" />
 
