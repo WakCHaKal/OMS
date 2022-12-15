@@ -125,7 +125,7 @@
 
             <input id="last_name" placeholder="Last Name" maxlength="80" name="last_name" size="20" type="text" required />
 
-            <input id="email" placeholder="Email" maxlength="80" name="email" size="20" type="text" required />
+            <input id="email" placeholder="Email" maxlength="80" name="email" size="20" type="email" required />
 
             <input id="company" placeholder="Company" maxlength="40" name="company" size="20" type="text" required />
 
@@ -135,7 +135,8 @@
                 <option value="France">France</option>
             </select>
             
-            <input id="phone" placeholder="Phone" maxlength="40" name="phone" size="20" type="text" required />
+            <input id="phone" placeholder="Phone" maxlength="40" name="phone" size="20" type="tel"
+                   pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"  required />
 
             <input type="submit" name="submit" />
         </form>
