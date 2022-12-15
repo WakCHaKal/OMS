@@ -1,1 +1,122 @@
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+ <style> 
+     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap'); 
+    </style>
+    
+
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #main-container {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #left-container {
+        flex: 1;
+        position: relative;
+        background-color: #D6E3F6;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+    }
+
+    #left-container:before {
+        content: "";
+        background-image: url('./Imagem/bracosentrelacados.jpeg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.5;
+    }
+
+    #mensagem {
+        margin-top:auto;
+        margin-bottom:20px;
+        width: 300px;
+        z-index: 0;
+        font-weight:bold;
+        font-family: 'Noto Serif', serif;
+    }
+
+    #logo {
+        margin-top:auto;
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        z-index: 0;
+    }
+
+    #right-container {
+        flex: 1;
+        background-color: #DACFFA;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+    }
+
+    form {
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #form-title {
+        color: #4444a6;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    form input:not([type=submit]),
+    form select {
+        border: 2px solid #4444a6;
+        padding: 4px 8px;
+        border-radius: 3px;
+    }
+
+    form input[type=submit] {
+        margin-top: 8px;
+        padding: 4px 8px;
+        border: 2px solid #4444a6;
+        background-color: #6d47f6;
+        color: white;
+        border-radius: 3px;
+    }
+</style>
+
+<div id="main-container">
+    <div id="left-container">
+        <img id="logo" src="./Imagem/LogoAntonioTransparent.png" />
+        
+    </div>
+    <div id="right-container">
+      <span id="mensagem">Conclua o seu cadastro para aproveitar todos os serviços que foram pensados para você !</span>
+
+
+    </div>
+</div>
 
